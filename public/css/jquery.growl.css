@@ -1,0 +1,111 @@
+
+.ontop, #growls-default, #growls-tl, #growls-tr, #growls-bl, #growls-br, #growls-tc, #growls-bc, #growls-cc, #growls-cl, #growls-cr {
+  z-index: 99999999999999999999999;
+  position: fixed; }
+
+#growls-default {
+  top: 45px;
+  right: 10px; }
+#growls-tl {
+  top: 10px;
+  left: 10px; }
+#growls-tr {
+  top: 10px;
+  right: 10px; }
+#growls-bl {
+  bottom: 10px;
+  left: 10px; }
+#growls-br {
+  bottom: 10px;
+  right: 10px; }
+#growls-tc {
+  top: 10px;
+  right: 10px;
+  left: 10px; }
+#growls-bc {
+  bottom: 10px;
+  right: 10px;
+  left: 10px; }
+#growls-cc {
+  top: 50%;
+  left: 50%;
+  margin-left: -120px; }
+#growls-cl {
+  top: 50%;
+  left: 10px; }
+#growls-cr {
+  top: 50%;
+  right: 10px; }
+#growls-tc .growl, #growls-bc .growl {
+  margin-left: auto;
+  margin-right: auto; }
+
+.growl {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  position: relative;
+  border-radius: 4px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+  .growl.growl-incoming {
+    opacity: 0;
+    filter: alpha(opacity=0); }
+  .growl.growl-outgoing {
+    opacity: 0;
+    filter: alpha(opacity=0); }
+  .growl.growl-small {
+	  max-width:700px;
+    min-width:400px;
+    padding: 5px;
+    margin: 5px; }
+  .growl.growl-medium {
+	  max-width:700px;
+    min-width:300px;
+    padding: 10px;
+    margin: 10px; }
+  .growl.growl-large {
+	  max-width:700px;
+    min-width:300px;
+    padding: 15px;
+    margin: 15px; }
+  .growl.growl-default {
+    color: #FFF;
+    background: #7f8c8d; }
+  .growl.growl-error {
+    color: #FFF;
+    background: #C0392B; 
+		font-family: 'Roboto Condensed', sans-serif;
+	font-size:16px;
+	}
+  .growl.growl-notice {
+    color: #000;	
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:18px;
+    background: #2ECC71; 		
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px  #bdc3c7 ;
+			
+	}
+  .growl.growl-warning {
+    color: #000;
+    background: #F39C12; }
+	.growl .growl-close:hover {
+		color:#000;
+	}
+  	
+  .growl .growl-close {
+	color: #fff;
+    cursor: pointer;
+    float: right;
+    font-size: 24px;
+    line-height: 5px;
+    font-weight: bold;		
+	
+    }
+  .growl .growl-message {
+    font-size: 18px;
+    line-height: 22px; 
+	
+			font-family: 'Roboto Condensed', sans-serif;
+	}

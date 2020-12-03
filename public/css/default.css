@@ -1,0 +1,31 @@
+body
+{
+	/*font-family:Consolas, monaco, monospace;
+	font: bold 13px Segoe UI;
+	font: bold 13px Helvetica Neue;*/
+	/*font-family:Consolas, monaco, monospace;*/
+	/*font-family: 'Roboto', sans-serif;	*/
+	margin: 0 auto;	
+	background-color:#fffff;	
+	width: 100%;
+	position:left;
+	padding: 0;
+	margin: 0;	
+}
+.bodypage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
+}
+.bodycontent {
+  position: relative;  
+  top:6px;
+  width:100%;  
+  height: -moz-calc(100vh - 60px);
+  height: -webkit-calc(100vh - 60px);
+  height: calc(100vh - 60px);
+  min-height:200px;
+  min-width:200px;
+  
+}
